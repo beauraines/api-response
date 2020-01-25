@@ -13,8 +13,8 @@ class OkResponseTest extends TestCase
         $response = API::ok('this is message', [])->getContent();
         $expectedResponse = [
             'MESSAGE' => 'this is message',
-            'STATUS'  => 200,
-            'DATA'    => [],
+            'STATUS' => 200,
+            'DATA' => [],
         ];
         $this->assertEquals($expectedResponse, json_decode($response, 1));
     }
@@ -25,8 +25,8 @@ class OkResponseTest extends TestCase
         $response = api()->ok('this is message', [])->getContent();
         $expectedResponse = [
             'MESSAGE' => 'this is message',
-            'STATUS'  => 200,
-            'DATA'    => [],
+            'STATUS' => 200,
+            'DATA' => [],
         ];
         $this->assertEquals($expectedResponse, json_decode($response, 1));
     }
@@ -37,8 +37,8 @@ class OkResponseTest extends TestCase
         $response = api()->ok()->getContent();
         $expectedResponse = [
             'MESSAGE' => config('api.messages.success'),
-            'STATUS'  => 200,
-            'DATA'    => [],
+            'STATUS' => 200,
+            'DATA' => [],
         ];
         $this->assertEquals($expectedResponse, json_decode($response, 1));
     }

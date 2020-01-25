@@ -31,12 +31,12 @@ class APIResponse
     public function response($status, $message, $data, ...$extraData)
     {
         $json = [
-            $this->statusLabel  => config('api.stringify') ? strval($status) : $status,
+            $this->statusLabel => config('api.stringify') ? strval($status) : $status,
             $this->messageLabel => $message,
-            $this->dataLabel    => $data,
+            $this->dataLabel => $data,
         ];
 
-        is_countable($data) && config('api.includeDataCount', false) && !empty($data) ?
+        is_countable($data) && config('api.includeDataCount', false) && ! empty($data) ?
             $json = array_merge($json, [$this->dataCountLabel => count($data)]) :
             '';
 

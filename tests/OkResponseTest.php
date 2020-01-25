@@ -10,7 +10,7 @@ class OkResponseTest extends TestCase
     /** @test */
     public function it_returns_ok_response()
     {
-        $response         = API::ok('this is message', [])->getContent();
+        $response = API::ok('this is message', [])->getContent();
         $expectedResponse = [
             'MESSAGE' => 'this is message',
             'STATUS'  => 200,
@@ -22,7 +22,7 @@ class OkResponseTest extends TestCase
     /** @test */
     public function it_returns_ok_response_from_helper_function()
     {
-        $response         = api()->ok('this is message', [])->getContent();
+        $response = api()->ok('this is message', [])->getContent();
         $expectedResponse = [
             'MESSAGE' => 'this is message',
             'STATUS'  => 200,
@@ -34,7 +34,7 @@ class OkResponseTest extends TestCase
     /** @test */
     public function it_returns_ok_response_with_default_message()
     {
-        $response         = api()->ok()->getContent();
+        $response = api()->ok()->getContent();
         $expectedResponse = [
             'MESSAGE' => config('api.messages.success'),
             'STATUS'  => 200,

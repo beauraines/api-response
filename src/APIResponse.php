@@ -14,9 +14,9 @@ class APIResponse
 
     public function __construct()
     {
-        $this->statusLabel    = config('api.keys.status');
-        $this->messageLabel   = config('api.keys.message');
-        $this->dataLabel      = config('api.keys.data');
+        $this->statusLabel = config('api.keys.status');
+        $this->messageLabel = config('api.keys.message');
+        $this->dataLabel = config('api.keys.data');
         $this->dataCountLabel = config('api.keys.dataCount', 'DATACOUNT');
     }
 

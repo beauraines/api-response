@@ -24,7 +24,7 @@ class ResponseTest extends TestCase
             'data'    => 'newData',
         ]);
 
-        $response         = api()->ok()->getContent();
+        $response = api()->ok()->getContent();
         $expectedResponse = [
             'newStatus'  => 200,
             'newMessage' => config('api.messages.success'),
@@ -54,7 +54,7 @@ class ResponseTest extends TestCase
     /** @test */
     public function it_returns_response_from_base_helper_function()
     {
-        $response         = api(403, 'Forbidden response message', [])->getContent();
+        $response = api(403, 'Forbidden response message', [])->getContent();
         $expectedResponse = [
             'STATUS'  => 403,
             'MESSAGE' => 'Forbidden response message',

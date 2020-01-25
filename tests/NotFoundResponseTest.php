@@ -10,7 +10,7 @@ class NotFoundResponseTest extends TestCase
     /** @test */
     public function it_returns_404_response()
     {
-        $response         = api()->notFound('No results for your query')->getContent();
+        $response = api()->notFound('No results for your query')->getContent();
         $expectedResponse = [
             'MESSAGE' => 'No results for your query',
             'STATUS'  => 404,
@@ -22,7 +22,7 @@ class NotFoundResponseTest extends TestCase
     /** @test */
     public function it_returns_404_response_with_default_config_message()
     {
-        $response         = api()->notFound()->getContent();
+        $response = api()->notFound()->getContent();
         $expectedResponse = [
             'MESSAGE' => config('api.messages.notfound'),
             'STATUS'  => 404,

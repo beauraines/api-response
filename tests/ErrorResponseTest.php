@@ -7,7 +7,7 @@ class ErrorResponseTest extends TestCase
     /** @test */
     public function it_returns_error_with_default_response()
     {
-        $response         = api()->error()->getContent();
+        $response = api()->error()->getContent();
         $expectedResponse = [
             'STATUS'  => 500,
             'MESSAGE' => config('api.messages.error'),

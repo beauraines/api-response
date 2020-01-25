@@ -90,7 +90,7 @@ return PhpCsFixer\Config::create()
         'unary_operator_spaces' => true,
         'whitespace_after_comma_in_array' => true,
         'function_declaration' => true,
-        'indentation_type' => true,
+        'indentation_type' => false,
         'no_spaces_after_function_name' => true,
         'no_spaces_inside_parenthesis' => true,
         'not_operator_with_successor_space' => false,

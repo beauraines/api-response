@@ -21,9 +21,9 @@ return [
      * Json response's body labels.
      */
     'keys' => [
-        'status' => 'STATUS',
-        'message' => 'MESSAGE',
-        'data' => 'DATA',
+        'status'    => 'STATUS',
+        'message'   => 'MESSAGE',
+        'data'      => 'DATA',
         'dataCount' => 'DATACOUNT',
     ],
 
@@ -31,20 +31,20 @@ return [
      * Default included status codes.
      */
     'codes' => [
-        'success' => 200,
-        'notfound' => 404,
+        'success'    => 200,
+        'notfound'   => 404,
         'validation' => 422,
-        'error' => 500,
+        'error'      => 500,
     ],
 
     /*
      * Status codes default messages.
      */
     'messages' => [
-        'success' => 'Process is successfully completed',
-        'notfound' => 'Sorry no results query for your request.',
+        'success'    => 'Process is successfully completed',
+        'notfound'   => 'Sorry no results query for your request.',
         'validation' => 'Validation Failed please check the request attributes and try again.',
-        'error' => 'Server error, please try again later',
+        'error'      => 'Server error, please try again later',
     ],
 
     /*
@@ -52,8 +52,8 @@ return [
      */
     'methods' => [
         [
-            'code' => 403,
-            'method' => 'forbidden',
+            'code'    => 403,
+            'method'  => 'forbidden',
             'message' => 'default message',
         ],
     ],

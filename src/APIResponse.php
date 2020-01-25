@@ -14,9 +14,9 @@ class APIResponse
 
     public function __construct()
     {
-        $this->statusLabel = config('api.keys.status');
-        $this->messageLabel = config('api.keys.message');
-        $this->dataLabel = config('api.keys.data');
+        $this->statusLabel    = config('api.keys.status');
+        $this->messageLabel   = config('api.keys.message');
+        $this->dataLabel      = config('api.keys.data');
         $this->dataCountLabel = config('api.keys.dataCount', 'DATACOUNT');
     }
 
@@ -31,14 +31,14 @@ class APIResponse
     public function response($status, $message, $data, ...$extraData)
     {
         $json = [
-            $this->statusLabel => config('api.stringify') ? strval($status) : $status,
+            $this->statusLabel  => config('api.stringify') ? strval($status) : $status,
             $this->messageLabel => $message,
-            $this->dataLabel => $data,
+            $this->dataLabel    => $data,
         ];
 
         is_countable($data) && config('api.includeDataCount', false) && ! empty($data) ?
-            $json = array_merge($json, [$this->dataCountLabel => count($data)]) :
-            '';
+      $json = array_merge($json, [$this->dataCountLabel => count($data)]) :
+      '';
 
         if ($extraData) {
             foreach ($extraData as $extra) {

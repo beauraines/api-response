@@ -7,11 +7,11 @@ class ErrorResponseTest extends TestCase
     /** @test */
     public function it_returns_error_with_default_response()
     {
-        $response = api()->error()->getContent();
+        $response         = api()->error()->getContent();
         $expectedResponse = [
-            'STATUS' => 500,
+            'STATUS'  => 500,
             'MESSAGE' => config('api.messages.error'),
-            'DATA' => [],
+            'DATA'    => [],
         ];
         $this->assertEquals($expectedResponse, json_decode($response, 1));
     }
@@ -23,9 +23,9 @@ class ErrorResponseTest extends TestCase
             ->error('error Accord, try later.', ['reference_code' => 345])
             ->getContent();
         $expectedResponse = [
-            'STATUS' => 500,
+            'STATUS'  => 500,
             'MESSAGE' => 'error Accord, try later.',
-            'DATA' => ['reference_code' => 345],
+            'DATA'    => ['reference_code' => 345],
         ];
         $this->assertEquals($expectedResponse, json_decode($response, 1));
     }

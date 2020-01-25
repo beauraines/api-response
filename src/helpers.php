@@ -1,7 +1,6 @@
 <?php
 
 if (!function_exists('api')) {
-
     /**
      * Create a new APIResponse instance.
      *
@@ -13,7 +12,7 @@ if (!function_exists('api')) {
      */
     function api($status = 200, $message = '', $data = [], ...$extraData)
     {
-        if (func_num_args() === 0) {
+        if (0 === func_num_args()) {
             return app('api.response');
         }
 

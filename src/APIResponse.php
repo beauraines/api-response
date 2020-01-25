@@ -37,8 +37,8 @@ class APIResponse
         ];
 
         is_countable($data) && config('api.includeDataCount', false) && !empty($data) ?
-            $json = array_merge($json, [$this->dataCountLabel => count($data)]) :
-            '';
+      $json = array_merge($json, [$this->dataCountLabel => count($data)]) :
+      '';
 
         if ($extraData) {
             foreach ($extraData as $extra) {

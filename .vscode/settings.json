@@ -1,0 +1,7 @@
+{
+    "vscode-php-cs-fixer.config": "/Users/beauraines/projects/api-response/.php_cs",
+    "vscode-php-cs-fixer.rules": "",
+    "vscode-php-cs-fixer.toolPath": "/usr/local/bin/php-cs-fixer",
+    "vscode-php-cs-fixer.allowRisky": true,
+    "vscode-php-cs-fixer.useCache": true
+}

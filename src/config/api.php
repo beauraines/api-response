@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
      * Turn to string the status code in the json response's body.
      */
@@ -21,7 +20,7 @@ return [
     /*
      * Json response's body labels.
      */
-    'keys'      => [
+    'keys' => [
         'status'    => 'STATUS',
         'message'   => 'MESSAGE',
         'data'      => 'DATA',

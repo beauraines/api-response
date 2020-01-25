@@ -95,6 +95,6 @@ return PhpCsFixer\Config::create()
         'no_spaces_inside_parenthesis' => true,
         'not_operator_with_successor_space' => false,
     ))
-    ->setIndent("  ")
+    ->setIndent("    ")
     ->setLineEnding("\n")
 ;

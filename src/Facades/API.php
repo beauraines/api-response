@@ -2,8 +2,8 @@
 
 namespace Obiefy\API\Facades;
 
-use Illuminate\Support\Facades\Facade;
 use Obiefy\API\ApiResponse;
+use Illuminate\Support\Facades\Facade;
 use Obiefy\Api\Contracts\ApiInterface;
 
 /**

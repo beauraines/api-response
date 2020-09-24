@@ -3,8 +3,8 @@
 namespace Obiefy\API;
 
 use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Traits\Macroable;
 use Obiefy\API\Contracts\ApiInterface;
+use Illuminate\Support\Traits\Macroable;
 
 class ApiResponse implements ApiInterface
 {

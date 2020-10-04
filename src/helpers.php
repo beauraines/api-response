@@ -1,7 +1,7 @@
 <?php
 
-use Obiefy\API\APIResponse;
 use Illuminate\Http\JsonResponse;
+use Obiefy\API\APIResponse;
 use Obiefy\Api\Contracts\ApiInterface;
 
 if (!function_exists('api')) {

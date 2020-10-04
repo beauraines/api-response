@@ -2,8 +2,8 @@
 
 namespace Obiefy\API;
 
-use Obiefy\Api\Contracts\ApiInterface;
 use Illuminate\Support\ServiceProvider;
+use Obiefy\Api\Contracts\ApiInterface;
 
 class ApiResponseServiceProvider extends ServiceProvider
 {
